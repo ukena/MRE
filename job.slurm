@@ -12,6 +12,7 @@ module load tools/python/3.8
 module load nvidia/cuda/11.7
 
 export PYTHONPATH=$PYTHONPATH:/home/yo76doh/mre
+export TF_CPP_MIN_LOG_LEVEL=2  # supress unimportant warnings
 
 python -m pip install --user -r requirements.txt
 
